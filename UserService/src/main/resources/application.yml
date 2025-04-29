@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${EMAIL}
+    password: ${PASSWORD}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+#      uri: mongodb+srv://sm1surajmondal:i6NQ1gCX6ONkKrMn@cluster0.quadp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      database: BugBusters
+      auto-index-creation: true

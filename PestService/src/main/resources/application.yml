@@ -1,0 +1,11 @@
+server:
+  port: 8082
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+#      uri: mongodb+srv://sm1surajmondal:i6NQ1gCX6ONkKrMn@cluster0.quadp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      database: BugBusters
+      auto-index-creation: true
