@@ -1,0 +1,60 @@
+services:
+  - name: api-gateway
+    type: web
+    repo: https://github.com/Surajhub21/IdeaLab
+    env: docker
+    plan: free
+    region: oregon
+    rootDir: api-gateway
+    dockerContext: .
+    dockerfilePath: Dockerfile
+
+  - name: config-server
+    type: web
+    repo: https://github.com/Surajhub21/IdeaLab
+    env: docker
+    plan: free
+    region: oregon
+    rootDir: config-server
+    dockerContext: .
+    dockerfilePath: Dockerfile
+
+  - name: discovery-server
+    type: web
+    repo: https://github.com/Surajhub21/IdeaLab
+    env: docker
+    plan: free
+    region: oregon
+    rootDir: discovery-server
+    dockerContext: .
+    dockerfilePath: Dockerfile
+
+  - name: face-service
+    type: web
+    repo: https://github.com/Surajhub21/IdeaLab
+    env: docker
+    plan: free
+    region: oregon
+    rootDir: face-service
+    dockerContext: .
+    dockerfilePath: Dockerfile
+
+  - name: feedback-service
+    type: web
+    repo: https://github.com/Surajhub21/IdeaLab
+    env: docker
+    plan: free
+    region: oregon
+    rootDir: feedback-service
+    dockerContext: .
+    dockerfilePath: Dockerfile
+
+  - name: user-service
+    type: web
+    repo: https://github.com/Surajhub21/IdeaLab
+    env: docker
+    plan: free
+    region: oregon
+    rootDir: user-service
+    dockerContext: .
+    dockerfilePath: Dockerfile
