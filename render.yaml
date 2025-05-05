@@ -1,5 +1,5 @@
 services:
-  - name: api-gateway
+  - name: APIGateway
     type: web
     repo: https://github.com/Surajhub21/IdeaLab
     env: docker
@@ -9,7 +9,7 @@ services:
     dockerContext: .
     dockerfilePath: Dockerfile
 
-  - name: service-registry
+  - name: ServiceRegistry 
     type: web
     repo: https://github.com/Surajhub21/IdeaLab
     env: docker
@@ -19,18 +19,7 @@ services:
     dockerContext: .              # Use the current directory as the Docker context
     dockerfilePath: Dockerfile    # Specify the Dockerfile path
 
-
-  - name: face-service
-    type: web
-    repo: https://github.com/Surajhub21/IdeaLab
-    env: docker
-    plan: free
-    region: oregon
-    rootDir: face-service
-    dockerContext: .
-    dockerfilePath: Dockerfile
-
-  - name: pest-service
+  - name: PestService
     type: web
     repo: https://github.com/Surajhub21/IdeaLab
     env: docker
@@ -40,7 +29,7 @@ services:
     dockerContext: .
     dockerfilePath: Dockerfile
 
-  - name: user-service
+  - name: UserService
     type: web
     repo: https://github.com/Surajhub21/IdeaLab
     env: docker
