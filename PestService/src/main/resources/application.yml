@@ -9,3 +9,8 @@ spring:
 #      uri: mongodb+srv://sm1surajmondal:i6NQ1gCX6ONkKrMn@cluster0.quadp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
       database: BugBusters
       auto-index-creation: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://service-registry:8761/eureka

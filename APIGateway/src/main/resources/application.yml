@@ -1,19 +1,4 @@
-spring:
-  cloud:
-    gateway:
-      routes:
-        - id: PESTSERVICE
-          uri: lb://PESTSERVICE
-          predicates:
-            - Path=/pests/**
-            - Path=/price/**
-        - id: BOOKINGSERVICE
-          uri: lb://BOOKINGSERVICE
-          predicates:
-            - Path=/booking/**
-        - id: USERSERVICE
-          uri: lb://USERSERVICE
-          predicates:
-            - Path=/user/**
-            - Path=/email/**
-            - Path=/public/**
+eureka:
+  client:
+    service-url:
+      defaultZone: http://service-registry:8761/eureka

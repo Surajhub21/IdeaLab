@@ -8,3 +8,8 @@ spring:
       port: 27017
       database: BugBusters
       auto-index-creation: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://service-registry:8761/eureka
