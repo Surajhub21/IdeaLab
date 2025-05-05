@@ -5,29 +5,20 @@ services:
     env: docker
     plan: free
     region: oregon
-    rootDir: api-gateway
+    rootDir: APIGateway
     dockerContext: .
     dockerfilePath: Dockerfile
 
-  - name: config-server
+  - name: service-registry
     type: web
     repo: https://github.com/Surajhub21/IdeaLab
     env: docker
-    plan: free
     region: oregon
-    rootDir: config-server
-    dockerContext: .
-    dockerfilePath: Dockerfile
+    plan: free
+    rootDir: ServiceRegistry      # Correct the path here to match your folder structure
+    dockerContext: .              # Use the current directory as the Docker context
+    dockerfilePath: Dockerfile    # Specify the Dockerfile path
 
-  - name: discovery-server
-    type: web
-    repo: https://github.com/Surajhub21/IdeaLab
-    env: docker
-    plan: free
-    region: oregon
-    rootDir: discovery-server
-    dockerContext: .
-    dockerfilePath: Dockerfile
 
   - name: face-service
     type: web
@@ -39,13 +30,13 @@ services:
     dockerContext: .
     dockerfilePath: Dockerfile
 
-  - name: feedback-service
+  - name: pest-service
     type: web
     repo: https://github.com/Surajhub21/IdeaLab
     env: docker
     plan: free
     region: oregon
-    rootDir: feedback-service
+    rootDir: PestService
     dockerContext: .
     dockerfilePath: Dockerfile
 
@@ -55,6 +46,6 @@ services:
     env: docker
     plan: free
     region: oregon
-    rootDir: user-service
+    rootDir: UserService
     dockerContext: .
     dockerfilePath: Dockerfile
